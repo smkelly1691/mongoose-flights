@@ -46,11 +46,21 @@ td {
 table {
   background: rgba(162, 221, 236, 0.65);
   padding: 20px;
-  
+
 }
 
 main {
   background: rgba(162, 221, 236, 0.65);
   margin: 0;
-  padding: 10px;
+  padding: 25px;
+}
+
+#back {
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
 }
