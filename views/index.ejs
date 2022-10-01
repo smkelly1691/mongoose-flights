@@ -3,15 +3,16 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
-    <nav>
-        <a href="/flights/new">ADD FLIGHT</a>
-        <a href="/flights">ALL FLIGHTS</a>
+    <nav class="w3-bar w3-border w3-light-grey">
+      <a class="w3-bar-item w3-button" href="/flights/new" style="width:50%">ADD FLIGHT</a>
+      <a class="w3-bar-item w3-button" href="/flights" style="width:50%">ALL FLIGHTS</a>
     </nav>
     <main>
-    <h1>Mongoose Flights</h1>
-    <p>Welcome <br> to the <br> Mongoose Flight Database</p>
-  </main>
+    <div><h1>Mongoose Flights</h1></div>
+    <div><p>Welcome <br> to the <br> Mongoose Flight Database</p></div>
+    </main>
   </body>
 </html>
