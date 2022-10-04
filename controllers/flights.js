@@ -19,9 +19,12 @@ function index(req, res) {
 
 function show(req, res) {
     Flight.findById(req.params.id, function(err, flight) {
-        res.render('flights/show', {title: 'Flight Detail', flight });
+        if (err) return res.redirect('/flights');
+        Ticket.find({flight: flight._id}, function(err2, tickets) {
+            res.render('flights/show', {title: 'Flight Detail', flight, tickets });
+        });
     });
-}
+};
 
 function newFlight(req, res) {
     res.render('flights/new', {title: 'Add Flight'})
