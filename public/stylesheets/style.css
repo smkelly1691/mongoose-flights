@@ -19,7 +19,6 @@ body > nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* padding: 0 20px 0 30px; */
 }
 
 nav > a {
@@ -52,6 +51,22 @@ td {
   text-align: left;
 }
 
+label {
+  margin: 10px;
+}
+
+input {
+  margin: 10px;
+}
+
+select {
+  margin: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
 table {
   background: rgba(162, 221, 236, 0.65);
   padding: 20px;
@@ -60,10 +75,10 @@ table {
 
 form {
   background: rgba(162, 221, 236, 0.65);
-  padding: 25px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: left;
   align-items: left;
   font-size: 15px;
 }
@@ -76,3 +91,4 @@ p {
 h1 {
   text-align: center;
 }
+
